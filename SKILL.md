@@ -65,6 +65,16 @@ If rendering is unavailable, disclose that visual pagination was not verified.
 - Deliver the DOCX and, when useful, a PDF preview.
 - Summarize meaningful edits and limitations.
 
+## Bundled directories
+
+- `agents/openai.yaml`: agent-facing display metadata, icons, and default task prompt.
+- `assets/doc-small.svg`: compact vector icon for agent interfaces.
+- `assets/doc.png`: raster icon for agent interfaces.
+- `resources/`: workflow, formatting, and quality references loaded as needed.
+- `scripts/`: executable utilities for inspection and rendering.
+
+Load reference files only when the task needs their detail. Use the agent metadata and icons as interface assets, not as document content.
+
 ## Tooling
 Primary library: python-docx. Install with:
 
